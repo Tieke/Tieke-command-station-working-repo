@@ -6,6 +6,28 @@
   margin-left: 3px;
 }
 
+.bot-row {
+  /*border: 3px solid gold;*/
+  /*width: 40px;*/
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#bots-table-container {
+  display: inline-block;
+  border: 3px solid gold;
+  float: left;
+  border-spacing: 5px;
+}
+
 #landscape-container {
   float: right;
+}
+
+#row {
+  display: inline-block;
 }
