@@ -1,0 +1,11 @@
+.cell {
+  display: inline-block;
+  border: 3px solid gold;
+  width: 40px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+#landscape-container {
+  float: right;
+}
