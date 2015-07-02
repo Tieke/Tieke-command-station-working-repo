@@ -1,3 +1,38 @@
+html, body {
+  position: relative;
+  height: 100%;
+  background-color: #0a111f;
+}
+
+
+/*--------Index Screen Styles----------------------*/
+
+.button {
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+#start-button {
+  background-color: #263248;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #7e8aa2;
+  box-shadow: 2px 2px 8px #e3e3e3, -2px -2px 8px #e3e3e3;
+}
+
+#start-button,
+#start-button a,
+#start-button a:visited {
+  color: #e3e3e3;
+}
+
+
+
+/*--------Game Board Styles------------------------*/
+
 .cell {
   display: inline-block;
   border: 3px solid gold;
@@ -32,3 +67,10 @@ tbody {
   display: inline-block;
 }
 
+
+/*--------Footer Styles----------------------------*/
+
+footer p {
+  color: #7e8aa2;
+  text-align: center;
+}
