@@ -4,6 +4,7 @@
   <title>tieke command station</title>
   <link rel='icon' href='./lib/media/joshua.ico' type='image/x-icon' />
   <link rel='stylesheet' type='text/css' href='./lib/css/normalize.css'>
+  <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' type='text/css' href='./lib/css/game.css'>
   <script type='text/javascript' src='./vendor/jquery-2.1.4.min.js'></script>
   <script type='text/javascript' src='./lib/js/viewHelpers.js'></script>
@@ -16,9 +17,15 @@
 </head>
 
 <body oncontextmenu="return false;">
-  <div id='stockpile-container'></div>
-  <div id='help-container'></div>
-  <div id='bots-table-container'></div>
-  <div id='landscape-container'></div>
-  <div id='menu-container'></div>
+  <div class="game-container">
+    <div class="game-details">
+      <div id="left">
+        <div id='stockpile-container'></div>
+        <div id='help-container'></div>
+        <div id='bots-table-container'></div>
+      </div>
+      <div id='landscape-container'></div>
+      <div id='menu-container'></div>
+    </div>
+  </div>
 </body>

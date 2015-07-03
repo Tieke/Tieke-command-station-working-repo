@@ -1,15 +1,45 @@
-html, body {
+html {
   position: relative;
   height: 100%;
   background-color: #0a111f;
   color: #7e8aa2;
+  background: url(../../img/tiekecraft.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+.game-container {
+  margin: -20px 0 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../img/gamebackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: fixed;
+  background-attachment: fixed;
+  min-height: 3000px;
+}
+
+.game-details {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+h2 {
+  padding: 20px 0;
 }
 
 
 /*--------Index Screen Styles----------------------*/
 
-.button {
+.main-logo {
   width: 100%;
+  height: 100%;
   margin: 40px auto;
   text-align: center;
 }
@@ -17,8 +47,10 @@ html, body {
 #start-button {
   padding: 10px 15px;
   text-decoration: none;
-  text-align: center;
   display: inline-block;
+  bottom: 20px;
+  position: fixed;
+  left: 45%;
 }
 
 
@@ -30,18 +62,39 @@ html, body {
 #start-button a,
 #start-button a:visited,
 #create-bot-button {
+  padding: 5px 8px;
   color: #e3e3e3;
   background-color: #263248;
   border: 2px solid #7e8aa2;
   box-shadow: 2px 2px 8px #e3e3e3, -2px -2px 8px #e3e3e3;
 }
 
+.feed-bot-button:hover,
+.deploy-bot-button:hover,
+#start-button:hover,
+#start-button a:hover,
+#create-bot-button:hover {
+  color: #EBCEAB;
+  background-color: #6D420D;
+  border: 2px solid #c77917;
+  box-shadow: 2px 2px 8px #c77917, -2px -2px 8px #c77917;
+}
+
+
 
 /*--------Game Board Styles------------------------*/
 
-.cell,
+.stockpile-div h2, p {
+  color: #c77917;
+
+}
+
 #bots-table-container {
   border: 3px solid #c77917;
+}
+
+.cell {
+  border: 3px solid #0a111f;
 }
 
 .cell,
@@ -52,8 +105,9 @@ html, body {
 }
 
 .cell {
-  width: 40px;
-  margin: 3px 0 0 3px;
+  width: 50px;
+  height: 50px;
+  margin: 1px 2px 2px 1px;
   padding: 5px;
 }
 
@@ -61,18 +115,50 @@ tbody {
     vertical-align: middle;
 }
 
-#bots-table-container {
+#left {
   float: left;
+}
+
+#bots-table-container {
   border-spacing: 5px;
+  background-color: #0a111f;
 }
 
 #landscape-container {
+  color: #c77917;
   float: right;
 }
 
 .feed-bot-button,
 .deploy-bot-button {
   margin: 10px;
+}
+
+#bots-table-container,
+#map {
+  font-size: 0.7em;
+}
+
+#map {
+  margin-top: 110px;
+  background: url(../../img/map.jpg) center center;
+}
+
+#map p {
+  color: #0a111f;
+  margin: 3px 0;
+}
+
+.bot-sprite {
+  max-width: 60px;
+}
+
+#create-bot-button {
+  margin: 15px 0;
+}
+
+#bots-table-label {
+  padding-left: 20px;
 }
 
 
