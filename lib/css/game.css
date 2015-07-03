@@ -2,6 +2,7 @@ html, body {
   position: relative;
   height: 100%;
   background-color: #0a111f;
+  color: #7e8aa2;
 }
 
 
@@ -14,47 +15,52 @@ html, body {
 }
 
 #start-button {
-  background-color: #263248;
   padding: 10px 15px;
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  border: 2px solid #7e8aa2;
-  box-shadow: 2px 2px 8px #e3e3e3, -2px -2px 8px #e3e3e3;
 }
 
+
+/*--------Button Styles----------------------------*/
+
+.feed-bot-button,
+.deploy-bot-button,
 #start-button,
 #start-button a,
 #start-button a:visited {
   color: #e3e3e3;
+  background-color: #263248;
+  border: 2px solid #7e8aa2;
+  box-shadow: 2px 2px 8px #e3e3e3, -2px -2px 8px #e3e3e3;
 }
-
 
 
 /*--------Game Board Styles------------------------*/
 
-.cell {
-  display: inline-block;
-  border: 3px solid gold;
-  width: 40px;
-  margin-top: 3px;
-  margin-left: 3px;
+.cell,
+#bots-table-container {
+  border: 3px solid #c77917;
 }
 
-.bot-row {
-  /*border: 3px solid gold;*/
-  /*width: 40px;*/
+.cell,
+#bots-table-container,
+#row {
+  display: inline-block;
+
+}
+
+.cell {
+  width: 40px;
+  margin: 3px 0 0 3px;
+  padding: 5px;
 }
 
 tbody {
-    display: table-row-group;
     vertical-align: middle;
-    border-color: inherit;
 }
 
 #bots-table-container {
-  display: inline-block;
-  border: 3px solid gold;
   float: left;
   border-spacing: 5px;
 }
@@ -63,14 +69,14 @@ tbody {
   float: right;
 }
 
-#row {
-  display: inline-block;
+.feed-bot-button,
+.deploy-bot-button {
+  margin: 10px;
 }
 
 
 /*--------Footer Styles----------------------------*/
 
 footer p {
-  color: #7e8aa2;
   text-align: center;
 }
