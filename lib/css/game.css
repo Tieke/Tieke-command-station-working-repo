@@ -22,7 +22,11 @@ body {
   background-size: cover;
   background-position: fixed;
   background-attachment: fixed;
-  min-height: 2000px;
+  min-height: 3000px;
+}
+.game-details {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 
@@ -109,6 +113,11 @@ tbody {
 .feed-bot-button,
 .deploy-bot-button {
   margin: 10px;
+}
+
+#map {
+  background: url(../../img/map.jpg) no-repeat center center fixed;
+  font-size: 0.8em;
 }
 
 
