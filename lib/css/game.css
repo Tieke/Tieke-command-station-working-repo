@@ -28,7 +28,8 @@ html, body {
 .deploy-bot-button,
 #start-button,
 #start-button a,
-#start-button a:visited {
+#start-button a:visited,
+#create-bot-button {
   color: #e3e3e3;
   background-color: #263248;
   border: 2px solid #7e8aa2;
