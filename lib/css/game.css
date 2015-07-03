@@ -36,7 +36,8 @@ html {
 .deploy-bot-button,
 #start-button,
 #start-button a,
-#start-button a:visited {
+#start-button a:visited,
+#create-bot-button {
   padding: 5px 8px;
   color: #e3e3e3;
   background-color: #263248;
@@ -47,7 +48,8 @@ html {
 .feed-bot-button:hover,
 .deploy-bot-button:hover,
 #start-button:hover,
-#start-button a:hover {
+#start-button a:hover,
+#create-bot-button:hover {
   color: #EBCEAB;
   background-color: #6D420D;
   border: 2px solid #c77917;
