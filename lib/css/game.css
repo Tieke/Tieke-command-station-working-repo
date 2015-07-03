@@ -24,9 +24,14 @@ body {
   background-attachment: fixed;
   min-height: 3000px;
 }
+
 .game-details {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
+}
+
+h2 {
+  padding: 20px 0;
 }
 
 
@@ -79,9 +84,17 @@ body {
 
 /*--------Game Board Styles------------------------*/
 
-.cell,
+.stockpile-div h2, p {
+  color: #c77917;
+
+}
+
 #bots-table-container {
   border: 3px solid #c77917;
+}
+
+.cell {
+  border: 3px solid #0a111f;
 }
 
 .cell,
@@ -92,8 +105,9 @@ body {
 }
 
 .cell {
-  width: 40px;
-  margin: 3px 0 0 3px;
+  width: 50px;
+  height: 50px;
+  margin: 1px 2px 2px 1px;
   padding: 5px;
 }
 
@@ -101,12 +115,17 @@ tbody {
     vertical-align: middle;
 }
 
-#bots-table-container {
+#left {
   float: left;
+}
+
+#bots-table-container {
   border-spacing: 5px;
+  background-color: #0a111f;
 }
 
 #landscape-container {
+  color: #c77917;
   float: right;
 }
 
@@ -115,9 +134,31 @@ tbody {
   margin: 10px;
 }
 
+#bots-table-container,
 #map {
-  background: url(../../img/map.jpg) no-repeat center center fixed;
-  font-size: 0.8em;
+  font-size: 0.7em;
+}
+
+#map {
+  margin-top: 110px;
+  background: url(../../img/map.jpg) center center;
+}
+
+#map p {
+  color: #0a111f;
+  margin: 3px 0;
+}
+
+.bot-sprite {
+  max-width: 60px;
+}
+
+#create-bot-button {
+  margin: 15px 0;
+}
+
+#bots-table-label {
+  padding-left: 20px;
 }
 
 
